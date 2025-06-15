@@ -113,5 +113,21 @@ int main()
      }
 
      cout << endl << "Размер вектора " << numbers.size() << endl;
+
+     numbers.at(1);     //доступ по индексу с проверкой 
+     
+     numbers.erase(numbers.end()-1);
+
+     for (int n : numbers) // упрощенный цикл: пока в нашем векторе есть переменные, он будет показывать n
+     {
+         cout << n << " ";
+     }
+
+     cout << endl << "Размер вектора " << numbers.size() << endl;
+
+     numbers.clear(); // чистка массива
+     cout << "Пустой ли вектор? " << (numbers.empty() ? "Да" : "Нет");
+
+
 }
 
